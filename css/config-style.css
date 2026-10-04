@@ -1,0 +1,122 @@
+body{
+    background-color: #000000;
+}
+
+.titre{
+    color: white;
+    margin: auto;
+}
+
+/* Menu de navigation */
+
+div.nav{
+	background-color:  #131212;
+    padding: 10px;
+}
+
+.menu-nav{
+    text-align: center;
+}
+
+div.nav nav.menu-nav li.btn{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+div.nav nav.menu-nav li.btn a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	font-size: 15pt;
+	background-color: rgb(80, 71, 71);
+	border-radius: 40px;
+    transition: 0.5s;
+}
+
+
+div.nav nav.menu-nav li.btn a:hover{
+	background-color: #131212;
+    color: white;
+    box-shadow: 0 0 30px white;
+}
+
+/* Contenue */
+
+.card {
+    width: 50%;
+    height: 120px;
+    transition: all .5s;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.card:hover {
+    height: 400px;
+    background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+    font-size: 10pt;
+}
+
+.card .header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #212121;
+    margin-bottom: 16px;
+}
+
+
+.card .header .title {
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+    color: #edededc5;
+}
+
+.card .content {
+    display: block;
+    text-align: justify;
+    color: #212121;
+    margin: 0 18px;
+}
+
+.card .content a {
+    font-size: 20pt;
+    color: grey;
+    text-decoration: none;
+    transition: all .5s;
+    font-weight: 500;
+}
+
+.card .content a:hover{
+    font-size: 20pt;
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
+    font-weight: 500;
+}
+
+.card .content img{
+    width: 400px;
+    margin-top: 40px;
+    float: left;
+}
+
+.card .content ol{
+    color: black;
+    float: left;
+    font-size: 20pt;
+}
+
+@media (max-width:1680px) {
+    .card:hover {
+        height: 650px;
+        background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+        font-size: 10pt;
+    }
+}
